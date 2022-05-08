@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Group Project</string>
+    <string name="first_name">First Name</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome_to_quick_cash">Welcome to Quick Cash!</string>
+    <string name="login_hyperlink">Already have an account. Login here</string>
+    <string name="register_hyperlink">Register with a new email address</string>
+
+    <string name="EMPTY_FIRST_NAME">First name is required!</string>
+    <string name="EMPTY_LAST_NAME">Last name is required!</string>
+    <string name="EMPTY_EMAIL_ADDRESS">Email address is required!</string>
+    <string name="EMPTY_PASSWORD">Password is required!</string>
+    <string name="EMPTY_CONFIRM_PASSWORD">Confirmed password is required!</string>
+    <string name="EMPTY_PHONE_NUMBER">Phone number is required!</string>
+
+    <string name="INVALID_EMAIL_ADDRESS">Email address is invalid!</string>
+    <string name="INVALID_PASSWORD">Password is invalid! (Need minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character)</string>
+    <string name="INVALID_PHONE_NUMBER">Phone number is invalid!</string>
+    <string name="INVALID_CONFIRM_PASSWORD">Confirmed password is not equal to password</string>
+
+    <string name="ALREADY_REGISTERED">This email is already registered</string>
+    <string name="login_page_title">Login</string>
+
+    <string name="INVALID_EMAIL_OR_PASSWORD">Check your email or password again</string>
+    <string name="FIREBASE_LINK">https://groupproject-f4fa0-default-rtdb.firebaseio.com/</string>
+
+    <string-array name="users_array">
+        <item>Employee</item>
+        <item>Employer</item>
+    </string-array>
+
+    <string-array name="jobs_array">
+        <item>repairing a computer</item>
+        <item>mowing the lawn</item>
+        <item>walking a dog</item>
+        <item>hourly babysitting</item>
+        <item>picking up a grocery</item>
+    </string-array>
+
+    <string-array name="urgency_array">
+        <item>urgent</item>
+        <item>not urgent</item>
+    </string-array>
+
+    <string name="EMPTY_DATE">Date is required!</string>
+    <string name="EMPTY_EXPECTED_DURATION">Expected duration is required!</string>
+    <string name="EMPTY_PLACE">Place is required!</string>
+    <string name="EMPTY_SALARY">Salary is required!</string>
+
+    <string name="INVALID_DATE">Date is invalid!</string>
+    <string name="title_activity_jobs_list">JobsListActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="EMPTY_LOWER_BOUND_SALARY">Salary range lower bound is required!</string>
+    <string name="EMPTY_UPPER_BOUND_SALARY">Salary range upper bound is required!</string>
+    <string name="EMPTY_LOWER_BOUND_DURATION">Expected duration range lower bound is required!</string>
+    <string name="EMPTY_UPPER_BOUND_DURATION">Expected duration range upper bound is required!</string>
+    <string name="Login_Title">Login</string>
+    <string name="Email_Address_Title">Email Address</string>
+    <string name="Password_Title">Password</string>
+    <string name="Post_Form_Title">Post Form</string>
+    <string name="Job_Type_Title">Job Type</string>
+    <string name="Repairing_A_Computer_Title">Repairing a computer</string>
+    <string name="Date_Title">Date</string>
+    <string name="DMY">DD/MM/YYYY</string>
+    <string name="Expected_Duration_Days_Title">Expected duration (days)</string>
+    <string name="Place_Title">Place</string>
+    <string name="Urgency_Title">urgency</string>
+    <string name="Salary_Title">Salary (CAD)</string>
+    <string name="Post_Title">Post</string>
+    <string name="Cancel_Title">Cancel</string>
+    <string name="Homepage_Title">Homepage</string>
+    <string name="Welcome_Employer_Title">Welcome Employer</string>
+    <string name="Posted_Job_Title">POSTED JOB</string>
+    <string name="Log_Out_Title">Log out</string>
+    <string name="Welcome_Employee_Title">Welcome Employee</string>
+    <string name="Preference_Title">PREFERENCE</string>
+    <string name="Applied_Job_Title">APPLIED JOB</string>
+    <string name="Find_A_Job_Title">FIND A JOB</string>
+    <string name="Sign_Up_Title">Sign Up</string>
+    <string name="Employee_Title">Employee</string>
+    <string name="Phone_Number_Title">Phone Number</string>
+    <string name="Confirm_Password_Title">Confirm Password</string>
+    <string name="Last_Name_Title">Last Name</string>
+    <string name="First_Name_Title">First Name</string>
+    <string name="Search_Jobs_Title">Search jobs</string>
+    <string name="Job_Titles_Title">Job Titles</string>
+    <string name="All_Jobs_Title">All jobs</string>
+    <string name="repairing_a_computer">repairing a computer</string>
+    <string name="mowing_the_lawn">mowing the lawn</string>
+    <string name="walking_the_dog">walking the dog</string>
+    <string name="hourly_babysitting">hourly babysitting</string>
+    <string name="picking_up_a_grocery">picking up a grocery</string>
+    <string name="CAD_Title">CAD</string>
+    <string name="Days_Title">days</string>
+    <string name="Search_Title">Search</string>
+    <string name="Current_Location">CURRENT LOCATION</string>
+
+    <string name="EMPTY_ENTER_AMOUNT_TO_PAID">Empty amount to be paid!</string>
+    <string name="Evaluation_Title">Evaluation</string>
+    <string name="title_activity_current_location">CurrentLocationActivity</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployerHomepageActivity">
+
+    <TextView
+        android:id="@+id/Employer_HomepageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Homepage_Title"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.10" />
+
+    <TextView
+        android:id="@+id/EmployerHomepageWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Welcome_Employer_Title"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.30"  />
+
+    <Button
+        android:id="@+id/EmployerHomepage_Posted_Job"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#006622"
+        android:onClick="onClick"
+        android:text="@string/Posted_Job_Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <Button
+        android:id="@+id/EmployerHomepage_Post"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#950C0C"
+        android:onClick="onClick"
+        android:text="@string/Post_Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.60" />
+
+    <Button
+        android:id="@+id/EmployerHomepage_CURRENT_LOCATION"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#673AB7"
+        android:onClick="onClick"
+        android:text="@string/Current_Location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.700" />
+
+    <Button
+        android:id="@+id/EmployerHomepage_LogOut"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2C71E8"
+        android:onClick="onClick"
+        android:text="@string/Log_Out_Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.90" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

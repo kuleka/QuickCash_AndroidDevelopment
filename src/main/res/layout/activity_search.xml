@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <TextView
+        android:id="@+id/Employee_SearchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Search_Jobs_Title"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.100" />
+
+    <TextView
+        android:id="@+id/Employee_SearchJobTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Job_Titles_Title"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.150"
+        app:layout_constraintVertical_bias="0.200" />
+
+    <RadioGroup
+        android:id="@+id/Employee_SearchJobTitleResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Employee_SearchJobTitle"
+        app:layout_constraintLeft_toLeftOf="@id/Employee_SearchJobTitle" >
+
+        <RadioButton
+            android:id="@+id/Employee_SearchJobTitleAll"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/All_Jobs_Title"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/Employee_SearchJobTitle"
+            app:layout_constraintTop_toBottomOf="@+id/Employee_SearchJobTitle"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/Employee_SearchJobTitleResultRepairingAComputer"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/repairing_a_computer"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/Employee_SearchJobTitleAll"
+            app:layout_constraintTop_toBottomOf="@+id/Employee_SearchJobTitleAll" />
+
+        <RadioButton
+            android:id="@+id/Employee_SearchJobTitleMowingTheLawn"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/mowing_the_lawn"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/Employee_SearchJobTitleResultRepairingAComputer"
+            app:layout_constraintTop_toBottomOf="@+id/Employee_SearchJobTitleResultRepairingAComputer" />
+
+        <RadioButton
+            android:id="@+id/Employee_SearchJobTitleWalkingTheDog"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/walking_the_dog"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/Employee_SearchJobTitleMowingTheLawn"
+            app:layout_constraintTop_toBottomOf="@+id/Employee_SearchJobTitleMowingTheLawn" />
+
+        <RadioButton
+            android:id="@+id/Employee_HourlyBabysitting"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/hourly_babysitting"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/Employee_SearchJobTitleWalkingTheDog"
+            app:layout_constraintTop_toBottomOf="@+id/Employee_SearchJobTitleWalkingTheDog" />
+
+        <RadioButton
+            android:id="@+id/Employee_PickingUpAGrocery"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/picking_up_a_grocery"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/Employee_HourlyBabysitting"
+            app:layout_constraintTop_toBottomOf="@+id/Employee_HourlyBabysitting" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Employee_SearchSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Salary_Title"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/Employee_SearchJobTitle"
+        app:layout_constraintTop_toBottomOf="@+id/Employee_SearchJobTitleResult" />
+
+    <EditText
+        android:id="@+id/Employee_SalaryRange"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:hint="Lower Bound"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/Employee_SearchSalary"
+        app:layout_constraintTop_toBottomOf="@+id/Employee_SearchSalary" />
+
+    <TextView
+        android:id="@+id/Employee_SalaryRangeCAD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CAD_Title"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Employee_SalaryRange"
+        app:layout_constraintStart_toEndOf="@+id/Employee_SalaryRange"
+        app:layout_constraintTop_toTopOf="@+id/Employee_SalaryRange" />
+
+    <TextView
+        android:id="@+id/Employee_ExpectedDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Expected_Duration_Days_Title"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/Employee_SalaryRange"
+        app:layout_constraintTop_toBottomOf="@+id/Employee_SalaryRange" />
+
+    <EditText
+        android:id="@+id/Employee_ExpectedDurationRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Expected Range"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/Employee_ExpectedDuration"
+        app:layout_constraintTop_toBottomOf="@+id/Employee_ExpectedDuration" />
+
+    <TextView
+        android:id="@+id/Employee_ExpectedDurationDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/Days_Title"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Employee_ExpectedDurationRange"
+        app:layout_constraintStart_toEndOf="@+id/Employee_ExpectedDurationRange"
+        app:layout_constraintTop_toTopOf="@+id/Employee_ExpectedDurationRange" />
+
+    <Button
+        android:id="@+id/Employee_Search_Cancel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2C71E8"
+        android:onClick="onClick"
+        android:text="@string/Cancel_Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.150"
+        app:layout_constraintVertical_bias="0.900" />
+
+    <Button
+        android:id="@+id/Employee_Search_Search"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#950C0C"
+        android:onClick="onClick"
+        android:text="@string/Search_Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.850"
+        app:layout_constraintVertical_bias="0.900" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

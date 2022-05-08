@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EvaluationActivity" >
+
+    <TextView
+        android:id="@+id/Evaluation_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Evaluation_Title"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.200" />
+
+
+
+    <TextView
+        android:id="@+id/Employee_EvaluateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Evaluate your feelings"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.200"
+        app:layout_constraintVertical_bias="0.400" />
+
+    <EditText
+        android:id="@+id/Employee_EvaluatePoint"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:hint="1-10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/Employee_EvaluateTitle"
+        app:layout_constraintTop_toBottomOf="@+id/Employee_EvaluateTitle" />
+
+    <TextView
+        android:id="@+id/Employee_EvaluatePointTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Employee_EvaluatePoint"
+        app:layout_constraintStart_toEndOf="@+id/Employee_EvaluatePoint"
+        app:layout_constraintTop_toTopOf="@+id/Employee_EvaluatePoint" />
+
+    <Button
+        android:id="@+id/Employee_Evaluation_Cancel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2C71E8"
+        android:onClick="onClick"
+        android:text="@string/Cancel_Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.150"
+        app:layout_constraintVertical_bias="0.750" />
+
+    <Button
+        android:id="@+id/Employee_Evaluation_Feedback"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#950C0C"
+        android:onClick="onClick"
+        android:text="Feedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.850"
+        app:layout_constraintVertical_bias="0.750" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

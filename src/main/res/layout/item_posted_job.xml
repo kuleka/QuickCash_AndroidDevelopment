@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_dark"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/jobTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Name:" />
+
+    <TextView
+        android:id="@+id/jobDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Date:" />
+
+    <TextView
+        android:id="@+id/jobDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Duration:" />
+
+    <TextView
+        android:id="@+id/jobSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Salary:" />
+
+    <TextView
+        android:id="@+id/jobPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Place:" />
+
+    <TextView
+        android:id="@+id/jobUrgency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Urgency:" />
+
+    <TextView
+        android:id="@+id/jobStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Status" />
+
+    <TextView
+        android:id="@+id/jobEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Employee:" />
+
+    <TextView
+        android:id="@+id/jobEvaluationToEmployer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Evaluation to Employer:" />
+
+    <TextView
+        android:id="@+id/jobEvaluationToEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Evaluation to Employee:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/payASalaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Pay a salary" />
+
+        <Button
+            android:id="@+id/EvaluateJobButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Evaluate" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+</LinearLayout>

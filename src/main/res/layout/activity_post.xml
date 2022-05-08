@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+
+    <TextView
+        android:id="@+id/postTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Post_Form_Title"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.100" />
+
+    <Spinner
+        android:id="@+id/jobType"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Job_Type_Title"
+        android:hint="@string/Repairing_A_Computer_Title"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.200" />
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/Date_Title"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.200"
+        app:layout_constraintVertical_bias="0.290" />
+
+    <EditText
+        android:id="@+id/dateField"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:hint="@string/DMY"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.800"
+        app:layout_constraintVertical_bias="0.290"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/expectedDurationField"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/Expected_Duration_Days_Title"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.380" />
+
+    <EditText
+        android:id="@+id/placeField"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:hint="@string/Place_Title"
+        android:gravity="center"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.470" />
+
+    <Spinner
+        android:id="@+id/urgencyType"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Urgency_Title"
+        android:hint="urgency"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.560" />
+
+    <EditText
+        android:id="@+id/salaryField"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Salary_Title"
+        android:gravity="center"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.650" />
+
+    <Button
+        android:id="@+id/postJobButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2C71E8"
+        android:text="@string/Post_Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.800"/>
+
+    <Button
+        android:id="@+id/cancelJobButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#950C0C"
+        android:text="@string/Cancel_Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.880"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
